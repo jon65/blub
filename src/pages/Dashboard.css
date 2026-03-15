@@ -1,0 +1,23 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-10);
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.page-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--text);
+}
+
+.page-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+}

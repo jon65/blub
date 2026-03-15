@@ -1,0 +1,128 @@
+.jobs-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-8);
+  max-width: 760px;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.page-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+}
+
+.page-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  margin-top: var(--sp-2);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border: none;
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity var(--t);
+  display: inline-block;
+}
+
+.btn-primary:hover { opacity: 0.88; }
+
+/* ── Empty state ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-12) 0;
+}
+
+.empty-text {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+}
+
+.empty-link {
+  font-size: var(--text-sm);
+  color: var(--accent);
+}
+
+.empty-link:hover { opacity: 0.8; }
+
+/* ── Jobs list ── */
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.job-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: border-color var(--t), background var(--t);
+  gap: var(--sp-4);
+}
+
+.job-card:hover {
+  border-color: var(--border-2);
+  background: var(--surface-2);
+}
+
+.job-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  min-width: 0;
+}
+
+.job-role {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.job-company {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+}
+
+.job-card-right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex-shrink: 0;
+}
+
+.match-pill {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  border: 1px solid;
+  padding: 2px var(--sp-2);
+  border-radius: var(--radius-sm);
+  background: transparent;
+}
+
+.job-date {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+}
